@@ -1,0 +1,3 @@
+tvconfig.img.zst
+vendor/tvservice.img.zst
+system/system/priv-app/com.vewd.core.service/com.vewd.core.service.apk.zst

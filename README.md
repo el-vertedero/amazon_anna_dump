@@ -1,0 +1,14 @@
+# anna-user 9 PS7706.5107N 0033924838144 amz-p,release-keys
+- manufacturer: amazon
+- platform: m7632
+- codename: anna
+- flavor: anna-user
+- release: 9
+- id: PS7706.5107N
+- incremental: 0033924838276
+- tags: amz-p,release-keys
+- fingerprint: Amazon/anna/anna:9/PS7706.5107N/0033924838144:user/amz-p,release-keys
+- is_ab: false
+- brand: Amazon
+- branch: anna-user-9-PS7706.5107N-0033924838144-amz-p,release-keys
+- repo: amazon_anna_dump

@@ -1,0 +1,5 @@
+tvconfig.img
+vendor/tvservice.img
+system/system/priv-app/com.vewd.core.service/com.vewd.core.service.apk
+fs_config_dirs
+fs_config_files

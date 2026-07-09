@@ -1,0 +1,190 @@
+#line 1 "vendor/amazon/conn/chipsets/sepolicy/property_contexts"
+#
+# Copyright (c) 2021-2022 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+persist.vendor.conn.chip        u:object_r:conn_chipset_prop:s0
+vendor.sys.conn.action          u:object_r:conn_chipset_prop:s0
+vendor.conn.chip                u:object_r:conn_chipset_prop:s0
+#line 1 "vendor/amazon/tools/devicetools/amzn_mmc_utils/sepolicy/property_contexts"
+# Copyright (c) 2022 Amazon.com, Inc. or its affiliates.  All rights reserved.
+#
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+
+sys.amzn_bsp_diag.emmc.         u:object_r:system_prop:s0
+
+#line 1 "vendor/mediatek/proprietary_tv/open/common/sepolicy/property_contexts"
+## DONT EDIT THIS FILE ##
+## this file has been moved to android/mediatek/p-series/open/system/sepolicy ##
+#line 1 "device/mediatek_tv/m7632/common/fusion/sepolicy/property_contexts"
+ro.amazon.sys.fbs-size                          u:object_r:amzn_graphics_prop:s0
+ro.product.model_trigger                        u:object_r:vendor_mtk_trigger_prop:s0
+ro.product.model.ready                          u:object_r:vendor_mtk_trigger_prop:s0
+ro.odm.ir.protocol                              u:object_r:vendor_mtk_oem_prop:s0
+ro.vendor.consumerir.timing                     u:object_r:vendor_mtk_oem_prop:s0
+ro.vendor.media.codecs.fosext                   u:object_r:vendor_mediacodecs_prop:s0
+ro.vendor.media.codecs.fosext.ready             u:object_r:vendor_mtk_trigger_prop:s0
+ro.vendor.product.demo_video_no                 u:object_r:vendor_mtk_trigger_prop:s0
+vendor.amz.pq.                               	u:object_r:vendor_mtk_oem_prop:s0
+persist.odm.led.behaviour                       u:object_r:vendor_amz_led_prop:s0
+vendor.mtk.omx.av1.restrained                   u:object_r:vendor_mtk_oem_prop:s0
+vendor.mtk.use.perf.gov                         u:object_r:vendor_mtk_oem_prop:s0
+ro.vendor.playready_device_cert_id              u:object_r:vendor_mtk_playready_prop:s0
+ro.vendor.playready_device_cert_digest          u:object_r:vendor_mtk_playready_prop:s0
+odm.locale                                      u:object_r:vendor_mtk_oem_prop:s0
+ro.vendor.config.name                           u:object_r:vendor_mtk_oem_prop:s0
+ro.vendor.dsp.name                              u:object_r:vendor_mtk_oem_prop:s0
+audio.amazon.acr.enabled                        u:object_r:amzn_audio_prop:s0
+# dns_server
+persist.disable.dns.8888                        u:object_r:dns_server_prop:s0
+ro.vendor.amz.product.name                      u:object_r:vendor_amz_product_prop:s0
+#line 1 "vendor/mediatek/proprietary_tv/open/system/sepolicy/property_contexts"
+##########################
+# system properties
+#
+chrome.tv.hole_threshold                    u:object_r:system_prop:s0
+dfb_jpd_write_buffer                        u:object_r:system_prop:s0
+drm.service.enabled                         u:object_r:system_prop:s0
+logd.klogd                                  u:object_r:system_prop:s0
+logd.statistics                             u:object_r:system_prop:s0
+media.aac_51_output_enabled                 u:object_r:system_prop:s0
+ms.avp.no.seek.zero                         u:object_r:system_prop:s0
+ms.mstplayer.no.seek.zero                   u:object_r:system_prop:s0
+mstar.browser.                              u:object_r:system_prop:s0
+persist.adb.tcp.port                        u:object_r:system_prop:s0
+ro.adb.secure                               u:object_r:system_prop:s0
+ro.af.client_heap_size_kbyte                u:object_r:system_prop:s0
+ro.hwui.texture_cache_size                  u:object_r:system_prop:s0
+ro.media.maxmem                             u:object_r:system_prop:s0
+ro.product.locale                           u:object_r:system_prop:s0
+ro.vold.primary_physical                    u:object_r:system_prop:s0
+user.                                       u:object_r:system_prop:s0
+uti.plugin.loglevel                         u:object_r:system_prop:s0
+vendor.bootvideo.                           u:object_r:system_prop:s0
+wifi.direct.interface                       u:object_r:system_prop:s0
+wifi.interface                              u:object_r:system_prop:s0
+wifi.supplinant.name                        u:object_r:system_prop:s0
+
+
+# adbnet
+persist.adbnet.                             u:object_r:adbnet_prop:s0
+persist.done.adbnet                         u:object_r:adbnet_prop:s0
+
+
+##########################
+# mstar properties
+#
+persist.vendor.mstar.                       u:object_r:mstar_system_prop:s0
+ro.vendor.mstar.                            u:object_r:mstar_system_prop:s0
+vendor.ms.                                  u:object_r:mstar_system_prop:s0
+vendor.mstar.                               u:object_r:mstar_system_prop:s0
+
+ms.                                         u:object_r:mstar_system_prop:s0
+mstar.consumer.                             u:object_r:mstar_system_prop:s0
+mstar.wlan.driver                           u:object_r:mstar_system_prop:s0
+net.hostname                                u:object_r:mstar_system_prop:s0
+sys.str.delay_before_str                    u:object_r:mstar_system_prop:s0
+vendor.mali.                                u:object_r:mstar_system_prop:s0
+vendor.sys.gralloc.                         u:object_r:mstar_system_prop:s0
+vendor.sys.no.external.afbc                 u:object_r:mstar_system_prop:s0
+
+fos.debug.                                  u:object_r:mstar_media_prop:s0
+ms.media.                                   u:object_r:mstar_media_prop:s0
+vendor.mstar.media.                         u:object_r:mstar_media_prop:s0
+vendor.mstar.primary.audioHAL.              u:object_r:mstar_media_prop:s0
+vendor.ms.mstplayer.                        u:object_r:mstar_media_prop:s0
+
+
+##########################
+# mtk properties
+#
+vendor.mtk.sys.net.wowl_on                  u:object_r:sys_net_wowl_on:s0
+vendor.mtk.net.dns1                         u:object_r:mtk_net_dns:s0
+vendor.mtk.net.dns2                         u:object_r:mtk_net_dns:s0
+vendor.mtk.net.dns3                         u:object_r:mtk_net_dns:s0
+vendor.mtk.net.dns4                         u:object_r:mtk_net_dns:s0
+vendor.mtk.                                 u:object_r:vendor_mtk_default_prop:s0
+vendor.sys.                                 u:object_r:vendor_mtk_default_prop:s0
+persist.vendor.bt.                          u:object_r:vendor_mtk_default_prop:s0
+persist.vendor.sys.                         u:object_r:vendor_mtk_default_prop:s0
+ro.recovery.wl.maxstore                     u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.mtk.                              u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.sys.                              u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.camera.                           u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.hdmi.                             u:object_r:vendor_mtk_default_prop:s0
+vendor.display-size                         u:object_r:vendor_mtk_default_prop:s0
+vendor.nrdp.                                u:object_r:netflix_prop:s0
+vendor.mtk.aipq.                            u:object_r:vendor_mtk_aipq_prop:s0
+MTKSceneDetect.                             u:object_r:vendor_mtk_aipq_prop:s0
+
+ro.vendor.mtk.system.dvbs.existed           u:object_r:vendor_mtk_dvbs_prop:s0
+ro.vendor.mtk.system.ci.existed             u:object_r:vendor_mtk_dvbs_prop:s0
+ro.vendor.fos.dvbs.existed                  u:object_r:vendor_mtk_dvbs_prop:s0
+ro.vendor.fos.ci.existed                    u:object_r:vendor_mtk_dvbs_prop:s0
+ro.vendor.fos.lnb.fixed                     u:object_r:vendor_mtk_dvbs_prop:s0
+vendor.usb.debugging.init                   u:object_r:vendor_mtk_oem_prop:s0
+odm.usb.pid.adb                             u:object_r:vendor_mtk_oem_prop:s0
+ro.nrdp.oemmodel                            u:object_r:vendor_mtk_oem_prop:s0
+ro.product.oemmodel                         u:object_r:vendor_mtk_oem_prop:s0
+persist.odm.disable_rescue                  u:object_r:vendor_mtk_oem_prop:s0
+ro.product.region                           u:object_r:vendor_mtk_oem_prop:s0
+ro.product.ir_only_remote                   u:object_r:vendor_mtk_oem_prop:s0
+ro.product.oem_serial                       u:object_r:vendor_mtk_oem_prop:s0
+ro.poweron.src                              u:object_r:vendor_mtk_oem_prop:s0
+odm.irblaster.enable                        u:object_r:vendor_mtk_oem_prop:s0
+ro.odm.version.number                       u:object_r:vendor_mtk_oem_prop:s0
+ro.boot.support_ldm                         u:object_r:vendor_mtk_oem_prop:s0
+odm.hold.wakelock.idme                      u:object_r:vendor_mtk_power_prop:s0
+ro.vendor.nrdp.                             u:object_r:vendor_netflix_prop:s0
+sys.poweron.src                             u:object_r:powerctl_prop:s0
+audio.offload.                              u:object_r:vendor_mtk_audio_prop:s0
+vendor.mtk.frame.size.change                u:object_r:mstar_system_prop:s0
+
+
+#eARC
+vendor.mediatek.earc_status                 u:object_r:vendor_mtk_default_prop:s0
+
+# wifi_log_levels
+vendor.wifi.wlan0.                          u:object_r:wifi_log_levels_prop:s0
+
+#line 1 "device/amazon/common/sepolicy/amazon_hal/property_contexts"
+#
+# Copyright (c) 2018-2022 Amazon.com, Inc. or its affiliates.  All rights reserved.
+# PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+#
+
+ro.amzn_drm. u:object_r:amzn_drm_prop:s0
+ro.amzn_xo.value u:object_r:amzn_xo_prop:s0
+sys.amzn_drm.backup.status u:object_r:amzn_drmprov_prop:s0
+vendor.amzn_drm.backup.trigger u:object_r:amzn_drmprov_prop:s0
+vendor.amzn_drm.clear_cache.pr u:object_r:amzn_drmprov_prop:s0
+# Below is different from the above amzn_drm_prop, because we need
+# vendor_init to set the property.
+ro.vendor.amzn_drm_restore_from u:object_r:amzn_drm_config_prop:s0
+# vendor_init need to set it to 0 (default value),
+# and amzn_drmprov_check needs to read it
+persist.drmprov_check.no_skip u:object_r:amzn_drm_config_prop:s0
+persist.sys.amzn_drm.skip_mask u:object_r:amzn_drm_prop:s0
+persist.wifi.rssi.             u:object_r:persist_wifi_rssi_prop:s0
+persist.vendor.zigbee. u:object_r:amzn_zigbee_prop:s0
+persist.zigbee. u:object_r:amzn_zigbee_prop:s0
+vendor.zigbee. u:object_r:amzn_zigbee_prop:s0
+zigbee. u:object_r:amzn_zigbee_prop:s0
+ro.audio.xml_effect.path u:object_r:audio_config_prop:s0 exact string
+#line 1 "device/amazon/anna/sepolicy/amzn_bluetooth/property_contexts"
+persist.bluetooth.avrcpversion        u:object_r:amzn_bluetooth_prop:s0
+#line 1 "device/amazon/anna/sepolicy/hostap/property_contexts"
+persist.service.hostap.ssid                       u:object_r:wifi_hostap_prop:s0
+persist.service.hostap.pswd                       u:object_r:wifi_hostap_prop:s0
+persist.service.hostap.chan                       u:object_r:wifi_hostap_prop:s0
+persist.service.hostap.regn                       u:object_r:wifi_hostap_prop:s0
+persist.service.hostap.tgfr                       u:object_r:wifi_hostap_prop:s0
+persist.service.hostap.tgch                       u:object_r:wifi_hostap_prop:s0
+wifi.ro.hostapd.pid                               u:object_r:wifi_hostap_prop:s0
+wifi.ro.bridged.pid                               u:object_r:wifi_hostap_prop:s0
+wifi.ro.uif                                       u:object_r:wifi_hostap_prop:s0
+#line 1 "system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.

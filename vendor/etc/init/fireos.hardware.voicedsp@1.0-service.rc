@@ -1,0 +1,12 @@
+service voicedsp-hal-1-0 /vendor/bin/hw/fireos.hardware.voicedsp@1.0-service
+    class hal
+    user system
+    group system
+    disabled
+
+on property:ro.vendor.dsp.name=mt8570
+    insmod /vendor/lib/modules/mt8570.ko
+    insmod /vendor/lib/modules/adf_dsp.ko
+    insmod /vendor/lib/modules/acs_audio_client.ko
+    insmod /vendor/lib/modules/voice_dsp_card.ko
+    start voicedsp-hal-1-0

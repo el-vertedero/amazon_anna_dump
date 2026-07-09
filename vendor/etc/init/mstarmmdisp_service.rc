@@ -1,0 +1,5 @@
+service mstarmmdisp /vendor/bin/hw/mstar.hardware.mmdisp@1.0-service
+    class hal
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE

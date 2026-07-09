@@ -1,0 +1,6 @@
+service mstarpower /vendor/bin/hw/mstar.hardware.power@1.1-service
+    class hal
+    user system
+    group system wakelock input
+    capabilities BLOCK_SUSPEND SYS_BOOT
+    file /dev/kmsg w

@@ -1,0 +1,26 @@
+# Trigger Connectivity Chipset Detection Service
+on post-fs-data
+    insmod /vendor/lib/modules/firmware_class.ko path="/vendor/firmware/"
+    insmod /vendor/lib/modules/cfg80211.ko
+    start conn_chipset_detection
+
+# Connectivity Chipset Detection Service sets vendor.conn.chip property
+# and vendor.sys.conn.action property
+service conn_chipset_detection /vendor/bin/conn_chipset_detect_usb.sh
+    disabled
+    oneshot
+    user root
+
+# Respond to requests based on chipset name in vendor.conn.chip, and action
+# in vendor.sys.conn.action. This is not only for default init triggered requests,
+# but also prepares potential framework layer requirements of unloading or
+# reloading of connecitivity modules.
+## Detach/Attach/Reload
+on property:vendor.sys.conn.action=* && property:vendor.conn.chip=*
+    start conn_driver_action
+
+# Connectivity Driver Loading/Unloading Service insmods/rmmods wifi and bt drivers
+service conn_driver_action /vendor/bin/conn_driver_action.sh
+    disabled
+    oneshot
+    user root

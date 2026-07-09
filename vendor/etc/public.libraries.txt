@@ -1,0 +1,18 @@
+# this is the public vendor libraries available to the system partition
+libcom_mediatek_net_jni.so
+libapp_if_rpc.so
+libapp_if.so
+libcmpb.so
+libcom_mediatek_twoworlds_tv_jni.so
+libdtv_common.so
+libdtv_osai.so
+libfactory_api.so
+libhandle_app.so
+libmtal.so
+libmtkcmpb.so
+libMtkRmClient.so
+libnetmagic.so
+librpc_ipc.so
+vendor.mediatek.tv.mtktvapi@1.0-cwrapper.so
+libmtkrm_hwbinder_vendor.so
+

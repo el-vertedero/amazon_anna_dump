@@ -1,0 +1,13 @@
+# Import perfmonitord
+import init.perfmonitord.rc
+
+service enable_rro /system/bin/sh /system/bin/enable_rro.sh
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:shell:s0
+
+# boot time tune
+on property:sys.boot_completed=1
+    start enable_rro

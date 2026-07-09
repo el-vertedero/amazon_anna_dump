@@ -1,0 +1,53 @@
+/*
+ * sensor_config.json
+ *
+ * Copyright (c) 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved
+ *
+ * PROPRIETARY/CONFIDENTIAL
+ *
+ * Use is subject to license terms.
+ */
+
+/*
+ * Refer to wiki link:
+ * https://wiki.labcollab.net/confluence/display/Doppler/How+to+write+sensor_config.json+file
+ * for how to write sensor_config.json file
+ */
+
+{
+    "sensorDevice": [{
+            "sensorName": "tsl2540",
+            "vendorName": "AMS",
+            "type": "light",
+            "resolution": 1,
+            "minDelay": 100000,
+            "isVirtual": false,
+            "inputSysPath": "/sys/bus/i2c/devices",
+            "channelNames": [
+                "als_lux",
+		"als_ch0",
+                "als_ch1",
+                "als_itime",
+                "als_gain"
+            ],
+            "needsEnable":  false,
+            "needsRefresh": false,
+            "needsParsing": false
+        },
+	{
+            "sensorName": "sc1233a",
+            "vendorName": "SN",
+            "type": "proxi",
+            "resolution": 1,
+            "minDelay": 100000,
+            "isVirtual": false,
+            "inputSysPath": "/sys/bus/i2c/devices",
+            "channelNames": [
+                "hal_presence_status"
+            ],
+            "needsEnable":  false, 
+            "needsRefresh": false,
+            "needsParsing": false
+        }
+    ]
+}

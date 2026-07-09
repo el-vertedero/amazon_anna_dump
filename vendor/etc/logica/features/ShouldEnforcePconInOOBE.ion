@@ -1,0 +1,20 @@
+{
+  feature_id: "ShouldEnforcePconInOOBE",
+  fallback_value: false,
+  options: [
+    {
+      when_all: [
+        { is: ["region", "EU"] },
+        { is: ["countryCode", "PL"] },
+        { is: ["operator", "canal_plus"] }
+      ],
+      return_value: true
+    },
+    {
+      when_all: [
+        { in: ["countryCode", "IT", "HU", "RO", "FR", "AT", "BE", "HR", "PT", "BE"] },
+      ],
+      return_value: true
+    }
+  ]
+}

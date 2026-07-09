@@ -1,0 +1,5 @@
+# default init.rc file
+
+on post-fs-data
+    # change sensor_config.json owner/group
+    chown system:system /vendor/etc/sensor_config.json

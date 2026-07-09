@@ -1,0 +1,474 @@
+<manifest version="1.0" type="device" target-level="3">
+    <hal format="hidl">
+        <name>android.hardware.graphics.allocator</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IAllocator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport arch="32+64">passthrough</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IMapper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <version>2.2</version>
+        <interface>
+            <name>IComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tv.input</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITvInput</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <version>4.0</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <version>4.0</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.health</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>mstar.hardware.power</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IMstarPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.light</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ILight</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>mstar.hardware.light</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IMstarLight</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtkmtalservice</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkPhotoService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkMediaPluginService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkOsdService</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkVssService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.drm</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICryptoFactory</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::ICryptoFactory/clearkey</fqname>
+        <fqname>@1.1::IDrmFactory/clearkey</fqname>
+        <fqname>@1.1::ICryptoFactory/widevine</fqname>
+        <fqname>@1.1::IDrmFactory/widevine</fqname>
+        <fqname>@1.1::ICryptoFactory/fairplay</fqname>
+        <fqname>@1.1::IDrmFactory/fairplay</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.cas</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>mstar.hardware.mmdisp</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMmDisp</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.camera.provider</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>2.4</version>
+        <interface>
+            <name>IMtkCameraProvider</name>
+            <instance>external/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.configstore</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ISurfaceFlingerConfigs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.omx</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOmxStore</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IOmx</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>ISupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tv.cec</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IHdmiCec</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.memtrack</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMemtrack</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtkrm</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkRm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtktvapi</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+    <interface>
+      <name>IMtkTvApi</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiConfig</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiScan</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiBroadcast</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiRating</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiTimeshift</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiTime</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiEvent</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiPvrbrowser</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiRecord</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiInputSrc</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiCec</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiMultiview</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiChannelList</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiCI</name>
+      <instance>default</instance>
+    </interface>
+    <interface>
+      <name>IMtkTvApiCustom</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtktvapicustom</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkTvApiCustom</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtktvfactory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkTvFApiAudio</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiDisplayTest</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiDisplay</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiNetwork</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiPeripheral</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiSystem</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiInformation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiInputSource</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkTvFApiTv</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+          <name>IMtkTvFApiManager</name>
+          <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.Mm.Mm.mtktvfapicustom</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface><name>IMtkTvFApiCustom</name><instance>default</instance></interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtkdmservice</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkDmCommon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.cmpb</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IHCmpb</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.tv.networkproxy</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+            <name>INetworkProxy</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>fireos.hardware.idme</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+            <name>IIdme</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>fireos.hardware.fireosdha</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+            <name>IFireOsDha</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>fireos.hardware.hdcp</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+            <name>IAmazonHdcp</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>fireos.hardware.drmprov</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+            <name>IDrmprov</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>external/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>fireos.hardware.starboard</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>1.0</version>
+        <interface>
+        <name>IStarboard</name>
+        <instance>default</instance>
+        </interface>
+    </hal>
+    <sepolicy>
+        <version>26.0</version>
+    </sepolicy>
+</manifest>

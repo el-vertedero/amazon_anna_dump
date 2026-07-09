@@ -1,0 +1,8 @@
+# Diag start up.
+service diag /vendor/bin/diag.sh
+    group shell drmrpc
+    oneshot
+    disabled
+
+on post-fs
+    start diag

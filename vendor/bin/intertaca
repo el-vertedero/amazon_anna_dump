@@ -1,0 +1,63 @@
+#!/vendor/bin/sh
+
+key_index=(
+        "2 1"                                       #"WVCLASSIC"                  "WVCLASSIC/KeyBox.bin"
+        "3 1"                                       #"HDCP2/HDCPRX"               "HDCP2/hdcp2_key_22.bin"
+        "4 1"                                       #"WVCENC"                     "WVCENC/KeyBox.bin"
+        "5 1"                                       #"PLAYREADY25"                "PLAYREADY25/zgpriv.dat"  "PLAYREADY25/bgroupcert.dat"
+        "6 1"                                       #"NETFLIX"                    "netflix/KpeKph"
+        "7 1"                                       #"CHINADRM"                   "CHINADRM/key.bin"
+        "9 1"                                       #"HDCP22TX"                   "HDCP2/hdcp2_tx_key_22.bin"
+        "10 1"                                      #"PLAYREADY30"                "PLAYREADY30/zgpriv_protected.dat"
+        "11 1"                                      #"KEYMASTER"                  "keymaster/attestkey.bin"
+        "12 1"                                      #"NETFLIX50"                  "netflix50/KpeKph"
+        "13 1"                                      #"NAGRADRM"                   "NAGRADRM/NagraKey.bin"
+        "14 1"                                      #"DTCPIP"                     "DTCPIP/DTCPIP_PRIVATE"
+        "15 1"                                      #"WVCENCV9"                   "WVCENC/KeyBox.bin"
+        "21 0"                                      #"HDCP14"                     "HDCP14/hdcp_key.bin"
+)
+
+
+brunkey(){
+
+    local index_flag=$((1<<($1-2)))
+
+    if [ $((flag&index_flag)) -eq index_flag ];then
+       toybox_vendor echo "flag :$flag  $1 $2"
+    else
+        intertaca_manual $1 $2
+        if [ $? -eq 0 ];then
+            flag=$((flag|index_flag))
+           toybox_vendor echo "success $flag"
+        fi
+    fi
+}
+
+dec2hex(){
+
+    toybox_vendor printf "%x" $1
+
+}
+
+#main
+
+((flag=16#`toybox_vendor dd if=/dev/block/mmcblk0boot1  bs=1 count=4 skip=24|toybox_vendor xxd -p`))
+toybox_vendor echo $flag
+
+i=0
+while [ i -lt ${#key_index[@]} ]
+do
+    toybox_vendor echo ${key_index[i]};
+    brunkey ${key_index[i]}
+    i=$((i+1))
+done;
+
+flag1=`dec2hex $((flag&0xff))`
+flag2=`dec2hex $(((flag>>8)&0xff))`
+flag3=`dec2hex $(((flag>>16)&0xff))`
+flag4=`dec2hex $(((flag>>24)&0xff))`
+toybox_vendor echo -e -n "\x${flag4}\x${flag3}\x${flag2}\x${flag1}" |toybox_vendor dd of=/dev/block/mmcblk0boot1  bs=1 count=4 seek=24
+toybox_vendor sync;
+#secure store check
+toybox_vendor sleep 8
+intertaca_manual 254 1

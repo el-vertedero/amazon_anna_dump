@@ -1,0 +1,4 @@
+on property:ro.vendor.dsp.name=suecreek
+    # for farfielddspcontroller
+    start farfielddspcontroller
+

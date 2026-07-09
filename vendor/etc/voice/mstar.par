@@ -1,0 +1,21 @@
+mics                 = 4        //2,4 (mic number)
+prep_mics            = 4        //2,4 (mic channel for preprocessing)
+spks                 = 2        //2,4,6   (speaker number)
+prep_spks            = 2        //1,2     (reference channel for preprocessing)
+micseq               = 0231     //mic channel layout
+m0_posx              = 0.0
+m0_posy              = 0.0
+m0_posz              = 0.0
+m1_posx              = 0.105
+m1_posy              = 0.0
+m1_posz              = 0.0
+m2_posx              = 0.035
+m2_posy              = 0.0
+m2_posz              = 0.0
+m3_posx              = 0.070
+m3_posy              = 0.0
+m3_posz              = 0.0
+refgain              = 7        // reference compensate gain (in dB)
+debug                = 0        // 1: enable debug, 0: disable debug
+debug_file_len       = 16777216     // default value : 16*1024*1024 = 16777216
+debug_file_loc       = .

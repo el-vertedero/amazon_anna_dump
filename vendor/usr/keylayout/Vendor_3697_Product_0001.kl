@@ -1,0 +1,138 @@
+# Copyright (C) 2010 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#
+# MStar Smart TV IR Receiver.
+#
+
+key 116     POWER
+key 11      0
+key 2       1
+key 3       2
+key 4       3
+key 5       4
+key 6       5
+key 7       6
+key 8       7
+key 9       8
+key 10      9
+key 52      NUMPAD_SUBTRACT
+key 398     PROG_RED
+key 399     PROG_GREEN
+key 400     PROG_YELLOW
+key 401     PROG_BLUE
+key 103     DPAD_UP
+key 108     DPAD_DOWN
+key 105     DPAD_LEFT
+key 106     DPAD_RIGHT
+key 28      DPAD_CENTER
+key 363     LAST_CHANNEL
+key 402     CHANNEL_UP
+key 403     CHANNEL_DOWN
+key 115     VOLUME_UP
+key 114     VOLUME_DOWN
+key 104     STEM_1
+key 59      SLASH
+key 109     PAGE_DOWN
+key 102     HOME
+key 139     MENU
+key 158     BACK
+key 365     BACK
+key 113     VOLUME_MUTE
+key 167     MEDIA_RECORD
+key 138     GUIDE
+key 358     INFO
+key 82      WINDOW
+key 356     TV_POWER
+key 370     KATAKANA_HIRAGANA
+key 79      TV_INPUT
+key 468     TV_TELETEXT
+key 466     MUHENKAN
+key 168     MEDIA_REWIND
+key 159     MEDIA_FAST_FORWARD
+key 165     MEDIA_PREVIOUS
+key 163     MEDIA_NEXT
+key 207     MEDIA_PLAY_PAUSE
+key 119     MEDIA_PLAY_PAUSE
+key 164     MEDIA_PLAY_PAUSE
+key 128     MEDIA_STOP
+key 392     MEDIA_AUDIO_TRACK
+key 469     CAPTIONS
+key 60      TV_DATA_SERVICE
+key 471     SYSRQ
+# App Keys
+key 744   APP_1
+key 745   APP_2
+key 746   APP_3
+key 749   CEC_POWER
+key 747   APP_4
+key 362   LIVE_TV
+key 142   SLEEP
+key 143   WAKEUP
+key 750   TV_INPUT_HDMI_1
+key 751   TV_INPUT_HDMI_2
+key 752   TV_INPUT_HDMI_3
+key 756   TV_INPUT_COMPOSITE_1
+key 753   TV_ANTENNA_CABLE
+key 757   RECENTS
+key 249   SETTINGS
+key 217   INFO
+key 758   TV_INPUT
+key 364   LIVE_TV
+key 759   REBOOT
+key 760   FACTORY_RESET
+key 761   UPLOAD_LOGS
+key 762   SYSTEM_XRAY
+key 763   SCREENSHOT
+key 764   RESOLUTION_CYCLER
+key 765   VOICE_CMD
+key 766   DEBUG_MENU
+key 418   ZOOM_IN
+key 419   ZOOM_OUT
+key 372   ZOOM
+
+key 638   BUTTON_1
+key 639   BUTTON_2
+
+# Magnify keys
+key 640   ZOOM_TOGGLE
+key 641   PAN_UP
+key 642   PAN_DOWN
+key 643   PAN_LEFT
+key 644   PAN_RIGHT
+
+#Amazon FireTV remote IR fallback
+key 632   IRFALLBACK
+
+# Partner Keys for IR mode
+key 645   BUTTON_1	# Amazon Music
+key 646   BUTTON_2	# Hulu
+key 647   BUTTON_3	# HBO
+key 648   BUTTON_4	# My Apps
+key 649   BUTTON_5	# CTV
+key 650   BUTTON_6	# CRAVE
+key 651   BUTTON_7	# ZEE5
+key 652   BUTTON_8	# SonyLiv
+key 653   BUTTON_9	# LIVE TV, PARTNER key
+key 654   BUTTON_10	# DAZN
+key 655   BUTTON_11	# TVNow
+key 656   BUTTON_12	# Freeview Play
+key 657   BUTTON_13	# APPS
+key 658   BUTTON_14	# IMDB TV
+
+# Proton remote LIVE key for IR mode
+key 426   TV        # LIVE
+
+key 576 MACRO_1 #LANG
+key 577 MACRO_2 #AUDIO

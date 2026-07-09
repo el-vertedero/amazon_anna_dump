@@ -1,0 +1,7 @@
+# <- this is for comment / total file size must be less than 4KB
+
+# NOTE: to avoid security breach, set_config content is put in "initenv" cmd in
+# MstarCustomer/MSTAR/src/CusSystem.c
+initenv
+
+% <- this is end of file symbol

@@ -1,0 +1,5 @@
+#!/system/bin/sh
+# stop pppd
+interface=$1
+pid=`getprop pppoe.$interface.pid`
+kill -15 $pid

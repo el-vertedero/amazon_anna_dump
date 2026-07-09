@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Allowed packages list that system keep output 4k2k30hzfor them -->
+
+<packages>
+    <!--<item>com.android.launcher3</item>
+    <item>com.android.browser</item>-->
+</packages>

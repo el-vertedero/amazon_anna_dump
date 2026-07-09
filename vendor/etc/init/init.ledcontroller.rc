@@ -1,0 +1,7 @@
+on post-fs
+    # for ledcontroller
+    start ledcontroller
+
+service ledcontroller /system/bin/ledcontroller
+    user root
+    group system

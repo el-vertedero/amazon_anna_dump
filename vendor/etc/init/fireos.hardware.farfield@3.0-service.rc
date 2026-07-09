@@ -1,0 +1,4 @@
+service farfield-hal-3-0 /vendor/bin/hw/fireos.hardware.farfield@3.0-service
+    class hal
+    user root
+    group root audio system

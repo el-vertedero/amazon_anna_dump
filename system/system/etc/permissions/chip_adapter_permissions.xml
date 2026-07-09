@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <library name="com.amazon.device.smarthome.adapters.chip" file="/system/framework/SmartHomeChipAdapterFTV.jar"/>
+  <library name="com.amazon.device.smarthome.dshs.mediatorManager" file="/system/framework/SmartHomeMediatorManager.jar"/>
+  <library name="com.amazon.device.smarthome.libs.simInteractionClient" file="/system/framework/SmartHomeSimInteractionClient.jar"/>
+  <library name="com.matter.tv.server.service" file="/system/framework/TvApp.jar"/>
+</permissions>

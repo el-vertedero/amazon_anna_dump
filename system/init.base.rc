@@ -1,0 +1,15 @@
+on post-fs-data
+    wait_for_prop ro.product.model.ready yes
+    setprop ro.product.model ${ro.product.model_trigger}
+    setprop ro.product.vendor.model ${ro.product.model_trigger}
+    setprop ro.vendor.product.model ${ro.product.model_trigger}
+
+on property:odm.locale=*
+    setprop persist.sys.locale ${odm.locale}
+
+on property:vendor.mstar.bind.scalerirq=true
+    # assign mediadrm and drm hidl service to restricted group
+    write /dev/cpuset/restricted/cpus 1-3
+
+on property:vendor.mstar.bind.scalerirq=false
+    write /dev/cpuset/restricted/cpus 1-2

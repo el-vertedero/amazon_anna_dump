@@ -1,0 +1,6 @@
+<exceptions>
+    <exception package="com.amazon.tv.democontent.provider">
+      <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="true"/>
+      <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="true"/>
+    </exception>
+</exceptions>

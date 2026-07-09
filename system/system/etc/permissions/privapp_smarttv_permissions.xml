@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2019 - 2023 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<!--
+This XML file declares which signature|privileged permissions should be granted to privileged
+applications specific to smart tv. It allows additional grants on top of privapp-permissions-platform.xml
+and firetv/permissions/privapp_permissions.
+-->
+<permissions>
+    <privapp-permissions package="com.amazon.kor.demo">
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.RECOVERY"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.amazon.tv.channelscan">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.amazon.tv.inputpreference.service">
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.HDMI_CEC"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.amazon.tv.quicksettings">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.amazon.tv.settings.mediatek">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.mediatek.tvinput">
+        <permission name="android.permission.TV_INPUT_HARDWARE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.vewd.core.service">
+        <permission name="android.permission.CAPTURE_TV_INPUT"/>
+        <permission name="android.permission.TV_INPUT_HARDWARE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.vewd.core.tvapp">
+        <permission name="android.permission.MODIFY_PARENTAL_CONTROLS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.amazon.tv.ftvambient">
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

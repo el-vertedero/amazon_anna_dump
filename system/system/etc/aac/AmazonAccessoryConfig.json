@@ -1,0 +1,634 @@
+{
+    "bluetooth": {
+        "gamepad": [
+            {
+                "pid": 1026,
+                "vid": 6473,
+                "name": "AMAZON FIRE game controller",
+                "bluetooth_transport_type": "BREDR"
+            }
+        ],
+        "remote": [
+            {
+                "pid": 1042,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "MIC"
+                    }
+                ]
+            },
+            {
+                "pid": 1044,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "MIC"
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "ChannelUp": 3,
+                            "Yellow": 4,
+                            "Number6": 5,
+                            "PlayPause": 6,
+                            "Right": 7,
+                            "Voice": 8,
+                            "ChannelDown": 9,
+                            "Blue": 10,
+                            "Number7": 11,
+                            "VolumeUp": 12,
+                            "Down": 13,
+                            "Home": 14,
+                            "GuideLive": 15,
+                            "Number1": 16,
+                            "Number8": 17,
+                            "VolumeDown": 18,
+                            "Select": 19,
+                            "Rewind": 20,
+                            "SleepTimer": 21,
+                            "Number2": 22,
+                            "Number9": 23,
+                            "PrimeVideo": 24,
+                            "Left": 25,
+                            "NotUsed1": 26,
+                            "K123": 27,
+                            "Number3": 28,
+                            "CC": 29,
+                            "Netflix": 30,
+                            "Back": 31,
+                            "Mute": 32,
+                            "Red": 33,
+                            "Number4": 34,
+                            "Number0": 35,
+                            "Partner1": 36,
+                            "Menu": 37,
+                            "Partner2": 38,
+                            "Green": 39,
+                            "Number5": 40,
+                            "Txt": 41
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1045,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "ChannelUp": 3,
+                            "Yellow": 4,
+                            "Number6": 5,
+                            "PlayPause": 6,
+                            "Right": 7,
+                            "Voice": 8,
+                            "ChannelDown": 9,
+                            "Blue": 10,
+                            "Number7": 11,
+                            "VolumeUp": 12,
+                            "Down": 13,
+                            "Home": 14,
+                            "GuideLive": 15,
+                            "Number1": 16,
+                            "Number8": 17,
+                            "VolumeDown": 18,
+                            "Select": 19,
+                            "Rewind": 20,
+                            "SleepTimer": 21,
+                            "Number2": 22,
+                            "Number9": 23,
+                            "PrimeVideo": 24,
+                            "Left": 25,
+                            "NotUsed1": 26,
+                            "K123": 27,
+                            "Number3": 28,
+                            "CC": 29,
+                            "Netflix": 30,
+                            "Back": 31,
+                            "Mute": 32,
+                            "Red": 33,
+                            "Number4": 34,
+                            "Number0": 35,
+                            "Partner1": 36,
+                            "Menu": 37,
+                            "Partner2": 38,
+                            "Green": 39,
+                            "Number5": 40,
+                            "Txt": 41
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1048,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "MIC"
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "ChannelUp": 3,
+                            "Yellow": 4,
+                            "Number6": 5,
+                            "PlayPause": 6,
+                            "Right": 7,
+                            "Voice": 8,
+                            "ChannelDown": 9,
+                            "Blue": 10,
+                            "Number7": 11,
+                            "VolumeUp": 12,
+                            "Down": 13,
+                            "Home": 14,
+                            "GuideLive": 15,
+                            "Number1": 16,
+                            "Number8": 17,
+                            "VolumeDown": 18,
+                            "Select": 19,
+                            "Rewind": 20,
+                            "SleepTimer": 21,
+                            "Number2": 22,
+                            "Number9": 23,
+                            "PrimeVideo": 24,
+                            "Left": 25,
+                            "NotUsed1": 26,
+                            "K123": 27,
+                            "Number3": 28,
+                            "CC": 29,
+                            "Netflix": 30,
+                            "Back": 31,
+                            "Mute": 32,
+                            "Red": 33,
+                            "Number4": 34,
+                            "Number0": 35,
+                            "Partner1": 36,
+                            "Menu": 37,
+                            "Partner2": 38,
+                            "Green": 39,
+                            "Number5": 40,
+                            "Txt": 41
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1059,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "ALEXA",
+                        "skuid_icon_list": [
+                            {
+                                "skuid": [
+                                    116,
+                                    117,
+                                    118,
+                                    128,
+                                    129,
+                                    130,
+                                    581,
+                                    582,
+                                    590,
+                                    591
+                                ],
+                                "icon": "ALEXAMIC"
+                            }
+                        ]
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "PlayPause": 3,
+                            "Right": 4,
+                            "Voice": 5,
+                            "VolumeUp": 6,
+                            "Down": 7,
+                            "Home": 8,
+                            "VolumeDown": 9,
+                            "Select": 10,
+                            "Rewind": 11,
+                            "GuideLive": 12,
+                            "Left": 13,
+                            "Partner2": 14,
+                            "PrimeVideo": 15,
+                            "Back": 16,
+                            "Partner1": 17,
+                            "Mute": 18,
+                            "Menu": 19,
+                            "Netflix": 20,
+                            "Number0": 21,
+                            "Number1": 22,
+                            "Number2": 23,
+                            "Number3": 24,
+                            "Number4": 25,
+                            "Number5": 26,
+                            "Number6": 27,
+                            "Number7": 28,
+                            "Number8": 29,
+                            "Number9": 30,
+                            "CC": 31,
+                            "ChannelUp": 32,
+                            "ChannelDown": 33,
+                            "Red": 34,
+                            "Green": 35,
+                            "Yellow": 36,
+                            "Blue": 37,
+                            "Txt": 38
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1060,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "ALEXA",
+                        "skuid_icon_list": [
+                            {
+                                "skuid": [
+                                    119,
+                                    120,
+                                    121,
+                                    592,
+                                    593,
+                                    594,
+                                    103,
+                                    104,
+                                    105,
+                                    122,
+                                    123,
+                                    125
+                                ],
+                                "icon": "ALEXAMIC"
+                            }
+                        ]
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "PlayPause": 3,
+                            "Right": 4,
+                            "Voice": 5,
+                            "VolumeUp": 6,
+                            "Down": 7,
+                            "Home": 8,
+                            "VolumeDown": 9,
+                            "Select": 10,
+                            "Rewind": 11,
+                            "GuideLive": 12,
+                            "Left": 13,
+                            "Partner2": 14,
+                            "PrimeVideo": 15,
+                            "Back": 16,
+                            "Partner1": 17,
+                            "Mute": 18,
+                            "Menu": 19,
+                            "Netflix": 20,
+                            "Number0": 21,
+                            "Number1": 22,
+                            "Number2": 23,
+                            "Number3": 24,
+                            "Number4": 25,
+                            "Number5": 26,
+                            "Number6": 27,
+                            "Number7": 28,
+                            "Number8": 29,
+                            "Number9": 30,
+                            "CC": 31,
+                            "ChannelUp": 32,
+                            "ChannelDown": 33,
+                            "Red": 34,
+                            "Green": 35,
+                            "Yellow": 36,
+                            "Blue": 37,
+                            "Txt": 38
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1061,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "ALEXA",
+                        "skuid_icon_list": [
+                            {
+                                "skuid": [
+                                    103,
+                                    105,
+                                    111,
+                                    113,
+                                    114,
+                                    122,
+                                    123,
+                                    124,
+                                    125,
+                                    126,
+                                    127
+                                ],
+                                "icon": "ALEXAMIC"
+                            }
+                        ]
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "PlayPause": 3,
+                            "Right": 4,
+                            "Voice": 5,
+                            "VolumeUp": 6,
+                            "Down": 7,
+                            "Home": 8,
+                            "VolumeDown": 9,
+                            "Select": 10,
+                            "Rewind": 11,
+                            "GuideLive": 12,
+                            "Left": 13,
+                            "Partner2": 14,
+                            "PrimeVideo": 15,
+                            "Back": 16,
+                            "Partner1": 17,
+                            "Mute": 18,
+                            "Menu": 19,
+                            "Netflix": 20,
+                            "Number0": 21,
+                            "Number1": 22,
+                            "Number2": 23,
+                            "Number3": 24,
+                            "Number4": 25,
+                            "Number5": 26,
+                            "Number6": 27,
+                            "Number7": 28,
+                            "Number8": 29,
+                            "Number9": 30,
+                            "CC": 31,
+                            "ChannelUp": 32,
+                            "ChannelDown": 33,
+                            "Red": 34,
+                            "Green": 35,
+                            "Yellow": 36,
+                            "Blue": 37,
+                            "Txt": 38,
+                            "SleepTimer": 39,
+                            "Preset1": 40,
+                            "Preset2": 41,
+                            "Setting": 42,
+                            "Headset": 43,
+                            "K123": 44
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1062,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "ALEXA"
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "PlayPause": 3,
+                            "Right": 4,
+                            "Voice": 5,
+                            "VolumeUp": 6,
+                            "Down": 7,
+                            "Home": 8,
+                            "VolumeDown": 9,
+                            "Select": 10,
+                            "Rewind": 11,
+                            "GuideLive": 12,
+                            "Left": 13,
+                            "Partner2": 14,
+                            "PrimeVideo": 15,
+                            "Back": 16,
+                            "Partner1": 17,
+                            "Mute": 18,
+                            "Menu": 19,
+                            "Netflix": 20,
+                            "Number0": 21,
+                            "Number1": 22,
+                            "Number2": 23,
+                            "Number3": 24,
+                            "Number4": 25,
+                            "Number5": 26,
+                            "Number6": 27,
+                            "Number7": 28,
+                            "Number8": 29,
+                            "Number9": 30,
+                            "CC": 31,
+                            "ChannelUp": 32,
+                            "ChannelDown": 33,
+                            "Red": 34,
+                            "Green": 35,
+                            "Yellow": 36,
+                            "Blue": 37,
+                            "Txt": 38,
+                            "Input": 46,
+                            "Live": 49
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1063,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "ALEXA",
+                        "skuid_icon_list": [
+                            {
+                                "skuid": [
+                                    103,
+                                    104,
+                                    105,
+                                    111,
+                                    113,
+                                    114,
+                                    115,
+                                    122,
+                                    123,
+                                    124,
+                                    125,
+                                    126,
+                                    127
+                                ],
+                                "icon": "ALEXAMIC"
+                            }
+                        ]
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "PlayPause": 3,
+                            "Right": 4,
+                            "Voice": 5,
+                            "VolumeUp": 6,
+                            "Down": 7,
+                            "Home": 8,
+                            "VolumeDown": 9,
+                            "Select": 10,
+                            "Rewind": 11,
+                            "GuideLive": 12,
+                            "Left": 13,
+                            "Partner2": 14,
+                            "PrimeVideo": 15,
+                            "Back": 16,
+                            "Partner1": 17,
+                            "Mute": 18,
+                            "Menu": 19,
+                            "Netflix": 20,
+                            "Number0": 21,
+                            "Number1": 22,
+                            "Number2": 23,
+                            "Number3": 24,
+                            "Number4": 25,
+                            "Number5": 26,
+                            "Number6": 27,
+                            "Number7": 28,
+                            "Number8": 29,
+                            "Number9": 30,
+                            "CC": 31,
+                            "ChannelUp": 32,
+                            "ChannelDown": 33,
+                            "Red": 34,
+                            "Green": 35,
+                            "Yellow": 36,
+                            "Blue": 37,
+                            "Txt": 38
+                        }
+                    }
+                ]
+            },
+            {
+                "pid": 1066,
+                "vid": 369,
+                "name": "",
+                "bluetooth_transport_type": "BLE",
+                "featurelist": [
+                    {
+                        "feature_name": "ALEXA",
+                        "icon": "MIC",
+                        "skuid_icon_list": [
+                            {
+                                "skuid": [
+                                    573,
+                                    574,
+                                    575
+                                ],
+                                "icon": "ALEXAMIC"
+                            }
+                        ]
+                    },
+                    {
+                        "feature_name": "DCS",
+                        "keymap": {
+                            "FastForward": 0,
+                            "Up": 1,
+                            "Power": 2,
+                            "PlayPause": 3,
+                            "Right": 4,
+                            "Voice": 5,
+                            "VolumeUp": 6,
+                            "Down": 7,
+                            "Home": 8,
+                            "VolumeDown": 9,
+                            "Select": 10,
+                            "Rewind": 11,
+                            "GuideLive": 12,
+                            "Left": 13,
+                            "Partner2": 14,
+                            "PrimeVideo": 15,
+                            "Back": 16,
+                            "Partner1": 17,
+                            "Mute": 18,
+                            "Menu": 19,
+                            "Netflix": 20,
+                            "Number0": 21,
+                            "Number1": 22,
+                            "Number2": 23,
+                            "Number3": 24,
+                            "Number4": 25,
+                            "Number5": 26,
+                            "Number6": 27,
+                            "Number7": 28,
+                            "Number8": 29,
+                            "Number9": 30,
+                            "CC": 31,
+                            "ChannelUp": 32,
+                            "ChannelDown": 33,
+                            "Red": 34,
+                            "Green": 35,
+                            "Yellow": 36,
+                            "Blue": 37,
+                            "Txt": 38,
+                            "SleepTimer": 39,
+                            "Preset1": 40,
+                            "Input": 46,
+                            "Live": 49,
+                            "Picture": 50,
+                            "LastView": 51,
+                            "List": 52
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

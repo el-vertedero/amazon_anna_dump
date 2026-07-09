@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2020 - 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * PROPRIETARY/CONFIDENTIAL
+ -->
+
+<permissions>
+
+    <!-- Hardware component features specific to Anna hardware.
+         Devices with optional hardware must also include extra hardware files.
+    -->
+
+    <!-- Feature to specify the device supports broadcast time sync -->
+    <feature name="com.amazon.broadcast_time_sync.enabled"/>
+
+    <!-- Feature to specify that the device supports USB mode -->
+    <feature name="com.amazon.usb.debug"/>
+
+    <!-- Feature to specify TVs have IR extender support-->
+    <feature name="amazon.hardware.ir.extender.support" />
+
+</permissions>

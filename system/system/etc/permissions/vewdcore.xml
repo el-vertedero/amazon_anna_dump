@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.vewd.core.client" file="/system/priv-app/vewdcore-client/vewdcore-client.apk"/>
+    <library name="com.vewd.core.client.fvp" file="/system/priv-app/vewdcore-client-restricted/vewdcore-client-restricted.apk"/>
+    <library name="com.vewd.core.shared" file="/system/priv-app/vewdcore-shared/vewdcore-shared.apk"/>
+</permissions>

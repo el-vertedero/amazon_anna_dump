@@ -1,0 +1,46 @@
+{
+  "Comment1": "Each key in Layers corresponds to the layer priority. Higher the layer number, higher the layer priority",
+  "Comment2": "Each item in a given layer array has priority based on its array index. Lower the array index, higher the priority.",
+  "Comment3": "Ex, Volume has higher priority than Listening. OOBE has higher priority than DoNotDisturb.",
+  "numberOfLayers": 5,
+ "Layers": {
+    "4": [
+    ],
+    "3": [
+      "ready-alarm-short",
+      "ready-timer-short",
+      "active-start",
+      "active-listening",
+      "active-thinking",
+      "active-talking",
+      "active-end",
+      "do_not_disturb",
+      "wait",
+      "greta_active-thinking"
+    ],
+    "2": [
+      "ready-alarm",
+      "ready-timer",
+      "micsoff-ready-alarm"
+    ],
+    "1": [
+      "call_outbound_dialing",
+      "call_outbound_ringing",
+      "call_connected",
+      "call_connected_end",
+      "call_connected_start",
+      "call_incoming",
+      "call_incoming_call_waiting",
+      "call_incoming_muted",
+      "call_hold",
+      "sms_unheard",
+      "sms_incoming",
+      "text_message_02"
+    ],
+    "0": [
+      "error",
+      "off",
+      "greta_privacy"
+    ]
+  }
+}

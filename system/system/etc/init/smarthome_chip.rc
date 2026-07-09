@@ -1,0 +1,14 @@
+# Copyright (c) 2022 Amazon.com, Inc. or its affiliates.  All rights reserved
+
+on post-fs-data
+    mkdir /data/securedStorageLocation/com.amazon.device.smarthome.adapters.chip 0777 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome 0777 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome/PROT_CHIP 0777 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome/chip-tool-server/ 0777 smarthome smarthome
+    mkdir /data/securedStorageLocation/SmartHome/chip-tool/ 0777 smarthome smarthome
+
+on property:sys.boot_completed=1
+    chmod 777 /data/securedStorageLocation/SmartHome/PROT_CHIP/CapabilityInstanceDatabase.db
+    chmod 777 /data/securedStorageLocation/SmartHome/PROT_CHIP/CHIPAdapterDatabase.db
+    chmod 777 /data/securedStorageLocation/SmartHome/PROT_CHIP/CHIPAdapterDatabase.db-journal
+    restorecon_recursive /data/securedStorageLocation/SmartHome/PROT_CHIP

@@ -1,0 +1,49 @@
+on init
+    mkdir /data/property
+    # sdcard/usb mount points
+    mkdir /mnt
+    mkdir /mnt/sdcard
+    mkdir /mnt/usb
+    mkdir /mnt/usb/sda1
+    mkdir /mnt/usb/mmcblka1
+    mkdir /storage
+    mkdir /tvconfig_recovery
+
+on fs
+    class_start input
+    #symlink /vendor/tvconfig/config /config
+    mount ext4 /dev/block/platform/mstar_mci.0/by-name/tvconfig /tvconfig_recovery wait noatime block_validity nodiscard data=ordered journal_checksum
+    # restore security contexts here to label those device nodes created by utopia
+    restorecon /dev/gflip
+    restorecon /dev/msmailbox
+    restorecon /dev/system
+    exec_start autoupdate
+    write /sys/block/mmcblk0boot0/force_ro 0
+
+on post-fs-data
+    write /sys/devices/system/cpu/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpufreq/interactive/target_loads 40
+    write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 40
+
+on boot
+    wait /proc/ir_config_done 10
+    umount /tvconfig_recovery
+
+service autoupdate /sbin/ota_sdcard_autoupdate /dev/block/sda 10
+    seclabel u:r:recovery:s0
+    oneshot
+    disabled
+
+# Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
+#service watchdogd /sbin/watchdogd 10 20
+#    class core
+
+
+service console /sbin/mksh
+    disabled
+    seclabel u:r:shell:s0
+    console
+
+# Always start console on userdebug and eng builds
+on property:ro.debuggable=1
+    start console

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.mediatek.tvinput">
+        <permission name="android.permission.TV_INPUT_HARDWARE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.wwtv.setupwizard">
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.wwtv.tvcenter">
+				<permission name="android.permission.CHANGE_CONFIGURATION"/>
+				<permission name="android.permission.HDMI_CEC"/>
+				<permission name="android.permission.INTERACT_ACROSS_USERS"/>
+				<permission name="android.permission.MODIFY_PARENTAL_CONTROLS"/>
+				<permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+				<permission name="android.permission.SET_TIME_ZONE"/>
+				<permission name="android.permission.SHUTDOWN"/>
+				<permission name="android.permission.TV_INPUT_HARDWARE"/>
+				<permission name="android.permission.CHANGE_HDMI_CEC_ACTIVE_SOURCE"/>
+				<permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+</permissions>

@@ -1,0 +1,7 @@
+service iperftun /vendor/bin/iperftun -0
+    class main
+    disabled
+    oneshot
+    user root
+    group root system inet net_admin shell log
+    seclabel u:r:iperftun:s0

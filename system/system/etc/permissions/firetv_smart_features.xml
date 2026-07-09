@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (c) 2021 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+<permissions>
+    <!-- By declaring the feature here
+         The API PackageManager.hasSystemFeature(String feature) will
+         return true if passed the feature name below.-->
+
+    <!-- Features used in NetworkStatusAdvisor to characterize devices -->
+    <feature name="com.amazon.firetv.ethernet.builtin"/>
+</permissions>

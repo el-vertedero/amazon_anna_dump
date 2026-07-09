@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.amazon.sdk.broadcastnotification" file="/system/framework/com.amazon.sdk.broadcastnotification.jar"/>
+</permissions>

@@ -1,0 +1,9 @@
+user=_app seinfo=platform name=com.amazon.inloctest domain=inloc_app type=app_data_file levelFrom=user
+user=_app seinfo=amazonapp domain=amazon_app type=app_data_file levelFrom=none
+user=_app seinfo=platform name=com.android.providers.downloads domain=priv_app type=app_data_file levelFrom=none
+user=_app seinfo=amazonapp domain=amazon_log_app name=com.amazon.client.metrics type=app_data_file levelFrom=none
+user=_app seinfo=amazonapp domain=priv_app name=com.amazon.device.software.ota type=app_data_file levelFrom=none
+user=_app seinfo=platform name=com.amazon.providers.contentsupport domain=amazon_app type=app_data_file levelFrom=none
+user=_app seinfo=amazonapp name=com.amazon.perfc domain=amazon_perfstats_app type=app_data_file
+user=_app seinfo=amazonapp domain=amazon_prov_app name=com.amazon.katoch type=app_data_file levelFrom=user
+user=_app seinfo=platform domain=amazon_device_control_app name=com.amazon.tv.devicecontrol type=app_data_file

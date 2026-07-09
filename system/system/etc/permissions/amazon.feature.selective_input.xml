@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright (c) 2020 Amazon.com, Inc. or its affiliates.  All rights reserved.
+    PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+-->
+
+<permissions>
+    <!-- Indicates that this product supports selective access to inputs -->
+    <feature name="com.amazon.feature.selective_mic_access" />\
+    <feature name="com.amazon.feature.selective_camera_access" />\
+</permissions>

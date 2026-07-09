@@ -1,0 +1,21 @@
+<module name="ff" halVersion="2.0">
+    <attachedDevices>
+        <item>Built-In Mic</item>
+    </attachedDevices>
+    <mixPorts>
+        <mixPort name="ff input" role="sink" maxActiveCount="0">
+           <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                    samplingRates="16000" channelMasks="AUDIO_CHANNEL_IN_MONO"/>
+        </mixPort>
+   </mixPorts>
+   <devicePorts>
+       <devicePort tagName="Built-In Mic" type="AUDIO_DEVICE_IN_BUILTIN_MIC" role="source">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="16000" channelMasks="AUDIO_CHANNEL_IN_MONO"/>
+        </devicePort>
+    </devicePorts>
+    <routes>
+        <route type="mix" sink="ff input"
+               sources="Built-In Mic"/>
+    </routes>
+</module>

@@ -1,0 +1,8 @@
+
+ro.product.build.date=Wed Oct 1 01:57:03 UTC 2025
+ro.product.build.date.utc=1759283823
+ro.product.build.fingerprint=Amazon/anna/anna:9/PS7706.5107N/0033924838144:user/dev-keys
+#
+# ADDITIONAL PRODUCT PROPERTIES
+#
+ro.fireos.media.batch.size=50

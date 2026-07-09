@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+   Copyright (c) 2020-2022 Amazon.com, Inc. or its affiliates.  All rights reserved.
+   PROPRIETARY/CONFIDENTIAL.  USE IS SUBJECT TO LICENSE TERMS.
+--><permissions>
+    <!-- By declaring the feature here
+         The api PackageManager.hasSystemFeature(String feature) will
+         return true if passed the feature name below.-->
+    <feature name="amazon.hardware.optical_audio"/>
+    <feature name="amazon.hardware.usb_storage"/>
+    <feature name="amazon.hardware.ultra_hd"/>
+    <feature name="com.amazon.feature.picture_quality"/>
+    <feature name="amazon.hardware.ethernet"/>
+    <feature name="amazon.software.screen_mirroring"/>
+    <feature name="com.amazon.ecodesign.enabled"/>
+    <feature name="com.amazon.hbbtv_setting"/>
+    <feature name="com.amazon.software.spoken_subtitles"/>
+    <feature name="com.amazon.ci_setting"/>
+    <feature name="com.amazon.feature.security.camera.pip.enabled"/>
+    <feature name="freeview.software.firetv.v2"/>
+    <feature name="com.amazon.always_sdr.supported"/>
+    <feature name="amazon.hardware.headphone_audio"/>
+    <feature name="com.amazon.hardware.always_hdr.supported"/>
+    <feature name="com.amazon.usb.debug"/>
+    <feature name="com.amazon.hardware.hdmi_low_latency.supported"/>
+    <feature name="com.amazon.feature.clm"/>
+    <feature name="amazon.hardware.external_storage"/>
+    <feature name="com.amazon.ugs.enabled"/>
+    <!-- Feature to indicate ASHA (hearing aid) is enabled on device -->
+    <feature name="amazon.software.hearing_aid"/>
+    <feature name="com.amazon.hardware.led_behaviour"/>
+    <feature name="amazon.hardware.adaptable_storage"/>
+    <!-- Feature flag indicating that this device has Home Theater Tuple creation GUI
+    for both manual flow and FFP flow. -->
+    <feature name="com.amazon.feature.avls.htt_creation"/>
+</permissions>
